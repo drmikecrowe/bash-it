@@ -8,7 +8,7 @@ function _get_sshagent_pid_from_env_file() {
     echo "";
     return
   }
-  tail -1 "${env_file}" \
+  tail -n 1 "${env_file}" \
   | cut -d' ' -f4 \
   | cut -d';' -f1
 }
