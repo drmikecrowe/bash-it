@@ -20,7 +20,7 @@ source "$__BASH_IT_INSTALL/bash_it.sh"
 # If no context is provided, use 'default'.
 BACKUP_FILE_NAME_CONTEXT=${1:-default}
 
-BACKUP_FILE_NAME="$HOME/bash_it_config_$BACKUP_FILE_NAME_CONTEXT.sh"
+BACKUP_FILE_NAME="$HOME/.bash/bash_it_config_$BACKUP_FILE_NAME_CONTEXT.sh"
 
 echo "Backing up to file: $BACKUP_FILE_NAME"
 
