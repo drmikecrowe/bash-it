@@ -86,6 +86,15 @@ CONTENT_FOOTER_END
   __enable-component "alias"
   __enable-component "completion"
   __enable-component "plugin"
+
+  cat <<'CONTENT_FOOTER_END'
+  
+if [ "$(uname)" != "Darwin" ]; then
+  bash-it disable plugin cod
+  bash-it disable plugin bash-complete-partial-path
+fi
+CONTENT_FOOTER_END
+
 } > "$BACKUP_FILE_NAME"
 
 chmod +x "$BACKUP_FILE_NAME"

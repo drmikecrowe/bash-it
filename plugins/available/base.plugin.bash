@@ -51,7 +51,7 @@ function pickfrom ()
     [ -z "$file" ] && reference $FUNCNAME && return
     length=$(cat $file | wc -l)
     n=$(expr $RANDOM \* $length \/ 32768 + 1)
-    head -n $n $file | tail -1
+    head -n $n $file | tail -n1
 }
 
 function passgen ()

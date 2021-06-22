@@ -1,6 +1,10 @@
 cite about-plugin
 about-plugin 'My personal functions'
 
+detailed_hist() {
+	return 0
+}
+
 mcd() {
     [ -n "$1" ] && mkdir -p "$@" && cd "$1";
 }
